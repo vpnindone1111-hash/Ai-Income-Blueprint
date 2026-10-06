@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The AI Income Blueprint — 2027 Edition | 1,000+ Prompts for Freelancers</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Rajdhani:wght@600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<style>
+:root{
+  --navy:#051a30;
+  --navy2:#0a2545;
+  --cyan:#00e5cc;
+  --cyan2:#0bbeb5;
+  --gold:#f2cc83;
+  --gold2:#ffe9b0;
+  --teal:#0a7a82;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Inter',system-ui,sans-serif;background:#051a30;color:#fff;overflow-x:hidden}
+h1,h2,h3{font-family:'Rajdhani',sans-serif;letter-spacing:-0.02em}
+.grid-bg{
+  background-color:#061b33;
+  background-image:
+    linear-gradient(rgba(0,229,204,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,229,204,0.06) 1px, transparent 1px),
+    radial-gradient(circle at 50% 0%, rgba(0,229,204,0.18), transparent 60%);
+  background-size: 48px 48px, 48px 48px, 100% 100%;
+}
+.circuit{
+  position:absolute;inset:0;pointer-events:none;opacity:0.45;
+  background-image:url("data:image/svg+xml,%3Csvg width='800' height='800' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 120 H90 V40 H220 M0 300 H60 V200 H140 M760 0 V80 H680 V160 M760 400 H620 V280 H540 M0 700 H120 V600 H200' stroke='%2300e5cc' stroke-width='0.7' fill='none' opacity='0.35'/%3E%3Ccircle cx='90' cy='120' r='3' fill='%2300e5cc'/%3E%3Ccircle cx='220' cy='40' r='3' fill='%2300e5cc'/%3E%3C/svg%3E");
+}
+.glass{
+  background:linear-gradient(135deg, rgba(0,165,165,0.95), rgba(3,88,104,0.98));
+  border:1px solid rgba(0,229,204,0.9);
+  box-shadow: 0 0 30px rgba(0,229,204,0.35), inset 0 1px 0 rgba(255,255,255,0.2);
+}
+.btn-cyan{
+  background:var(--cyan);color:#03202c;font-weight:800;padding:14px 22px;border-radius:999px;display:inline-flex;align-items:center;gap:8px;transition:.2s;border:none;cursor:pointer;
+}
+.btn-cyan:hover{background:#00d1bb;transform:translateY(-1px);box-shadow:0 10px 24px rgba(0,229,204,0.35)}
+.btn-dark{
+  background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,0.7);padding:13px 22px;border-radius:999px;font-weight:700;display:inline-flex;align-items:center;gap:8px;cursor:pointer;transition:.2s
+}
+.btn-dark:hover{background:#fff;color:#051a30}
+.prompt-card{background:#0b2340;border:1px solid rgba(0,229,204,0.18);border-radius:16px;padding:16px;transition:.2s}
+.prompt-card:hover{border-color:rgba(0,229,204,0.45);transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,0.35)}
+.chip{padding:7px 14px;border-radius:999px;font-size:13px;font-weight:600;border:1px solid rgba(255,255,255,0.18);background:rgba(255,255,255,0.06);color:#cbd5e1;cursor:pointer;transition:.2s;white-space:nowrap}
+.chip.active{background:var(--cyan);color:#051a30;border-color:var(--cyan);font-weight:800}
+.book-shadow{box-shadow: 0 30px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.08), 0 0 40px rgba(0,229,204,0.25)}
+.hide-scrollbar::-webkit-scrollbar{display:none}
+.hide-scrollbar{-ms-overflow-style:none;scrollbar-width:none}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+</style>
+</head>
+<body class="antialiased">
+
+<!-- Header -->
+<header class="sticky top-0 z-[100] backdrop-blur-xl bg-[#051a30]/85 border-b border-white/10">
+  <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 h-[64px] flex items-center justify-between gap-4">
+    <div class="flex items-center gap-8">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg bg-[#00e5cc] flex items-center justify-center text-[#051a30]">
+          <i class="fa-solid fa-microchip"></i>
+        </div>
+        <div class="leading-none">
+          <div class="font-black tracking-widest text-[11px] text-white">BLUEPRINT<span class="text-[#00e5cc]">.</span></div>
+          <div class="text-[10px] tracking-[0.18em] text-[#7dd3d8] font-semibold">2027 EDITION</div>
+        </div>
+      </a>
+      <nav class="hidden lg:flex items-center gap-6 text-[13.5px] font-semibold text-white/80">
+        <a href="#inside" class="hover:text-white transition">Inside</a>
+        <a href="#prompts" class="hover:text-white transition">Prompt Library</a>
+        <a href="#preview" class="hover:text-white transition">Preview</a>
+        <a href="#pricing" class="hover:text-white transition">Pricing</a>
+        <a href="#faq" class="hover:text-white transition">FAQ</a>
+      </nav>
+    </div>
+    <div class="flex items-center gap-3">
+      <button id="searchTopBtn" class="hidden sm:flex w-9 h-9 rounded-full border border-white/15 items-center justify-center text-white/70 hover:text-white hover:border-white/30 transition"><i class="fa-solid fa-magnifying-glass text-sm"></i></button>
+      <button id="cartBtn" class="relative w-9 h-9 rounded-full border border-white/15 flex items-center justify-center text-white/80 hover:text-white transition">
+        <i class="fa-solid fa-bag-shopping text-sm"></i>
+        <span id="cartCount" class="absolute -top-1 -right-1 bg-[#00e5cc] text-[#051a30] text-[10px] font-extrabold w-5 h-5 rounded-full grid place-items-center">0</span>
+      </button>
+      <a href="#pricing" class="hidden md:inline-flex bg-white text-[#051a30] font-extrabold text-sm px-5 py-2.5 rounded-full hover:bg-[#00e5cc] transition">Get the Ebook — $29</a>
+      <button id="mobileToggle" class="lg:hidden w-9 h-9 grid place-items-center text-white"><i class="fa-solid fa-bars text-lg"></i></button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="hidden lg:hidden border-t border-white/10 bg-[#071f3a]">
+    <div class="px-4 py-4 flex flex-col gap-3 text-sm font-semibold">
+      <a href="#inside" class="py-2">Inside</a>
+      <a href="#prompts" class="py-2">Prompt Library</a>
+      <a href="#preview" class="py-2">Preview</a>
+      <a href="#pricing" class="py-2">Pricing</a>
+      <a href="#faq" class="py-2">FAQ</a>
+      <button onclick="generatePDF('sample')" class="btn-cyan justify-center mt-2 w-full">Download Sample</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative grid-bg overflow-hidden">
+  <div class="circuit"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#051a30]"></div>
+  <!-- top icon + edition -->
+  <div class="relative max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-10">
+    <div class="flex flex-col items-center justify-center gap-3 text-center">
+      <div class="flex items-center gap-4">
+        <div class="w-[88px] h-[88px] relative flex items-center justify-center">
+          <svg viewBox="0 0 100 100" class="w-full h-full">
+            <rect x="22" y="28" width="48" height="48" rx="10" fill="none" stroke="#00e5cc" stroke-width="1.8"/>
+            <circle cx="50" cy="52" r="13" fill="none" stroke="#00e5cc" stroke-width="1.2"/>
+            <path d="M22 42 H14 M22 52 H12 M22 62 H14 M70 32 V14 M50 28 V14 M30 28 V14 M70 76 V88 M50 76 V88" stroke="#00e5cc" stroke-width="1.6" stroke-linecap="round"/>
+            <circle cx="14" cy="42" r="2.2" fill="#00e5cc"/><circle cx="12" cy="52" r="2.2" fill="#00e5cc"/><circle cx="50" cy="14" r="2.2" fill="#00e5cc"/>
+            <g transform="translate(56,24)">
+              <rect x="0" y="0" width="32" height="22" rx="6" fill="none" stroke="#00e5cc" stroke-width="1.6"/>
+              <circle cx="8" cy="11" r="1.6" fill="#ffe9b0"/><circle cx="16" cy="11" r="1.6" fill="#ffe9b0"/><circle cx="24" cy="11" r="1.6" fill="#ffe9b0"/>
+              <path d="M10 22 L8 28 L16 22" fill="none" stroke="#00e5cc" stroke-width="1.6"/>
+            </g>
+            <text x="50" y="56" text-anchor="middle" font-size="7" fill="#ffe9b0" font-family="JetBrains Mono">$</text>
+          </svg>
+        </div>
+        <div class="hidden sm:block text-[#5ee1d8] tracking-[0.35em] text-xs font-bold">2026 • EDITION</div>
+        <div id="heroEditionBadge" class="sm:hidden text-[#5ee1d8] tracking-[0.2em] text-[11px] font-bold">2027 • EDITION</div>
+      </div>
+      <div class="sm:hidden text-[#5ee1d8] tracking-[0.35em] text-xs font-bold -mt-2">GEN 2027 UPDATED</div>
+    </div>
+
+    <div class="relative mt-6 sm:mt-8 grid lg:grid-cols-[1.15fr_0.85fr] gap-8 lg:gap-10 items-center">
+      <!-- Left -->
+      <div class="text-center lg:text-left">
+        <h1 class="font-black leading-[0.9] text-[42px] sm:text-[64px] lg:text-[78px] xl:text-[86px]">
+          <span class="text-white">THE</span> <span class="text-[#00e5cc]">AI</span> <span class="text-white">INCOME</span><br>
+          <span class="text-white">BLUEPRINT</span>
+        </h1>
+        <p class="mt-4 text-[#f2cc83] font-semibold leading-snug text-[18px] sm:text-[22px] lg:text-[26px] max-w-[640px] mx-auto lg:mx-0">
+          How to Master ChatGPT Prompts to<br class="hidden sm:block"> Start a Freelancing Side Hustle in <span id="heroYear">2027</span>
+        </p>
+        <div class="mt-6 flex items-center gap-3 max-w-[560px] mx-auto lg:mx-0">
+          <div class="h-[1px] flex-1 bg-gradient-to-r from-transparent to-[#00e5cc]/60 hidden sm:block"></div>
+          <div class="w-2 h-2 rotate-45 bg-[#f2cc83] hidden sm:block"></div>
+          <div class="h-[1px] flex-1 bg-gradient-to-l from-transparent to-[#00e5cc]/60 hidden sm:block"></div>
+        </div>
+
+        <!-- Teal card -->
+        <div class="glass rounded-[22px] sm:rounded-[28px] p-[1.5px] mt-6 max-w-[620px] mx-auto lg:mx-0">
+          <div class="rounded-[20px] sm:rounded-[26px] bg-gradient-to-br from-[#0a8b8f] via-[#0b6a7a] to-[#0a4a5e] px-5 sm:px-7 py-5 sm:py-6 flex items-center gap-4 sm:gap-5 relative overflow-hidden">
+            <div class="absolute -top-10 -right-10 w-40 h-40 bg-[#00e5cc]/20 blur-2xl rounded-full"></div>
+            <div class="absolute top-3 left-7 w-12 h-6 bg-white/15 blur-xl rounded-full"></div>
+            <div class="hidden sm:flex w-[64px] h-[64px] items-center justify-center shrink-0">
+              <svg viewBox="0 0 64 64" class="w-full h-full">
+                <rect x="6" y="18" width="32" height="20" rx="4" fill="none" stroke="#f2cc83" stroke-width="2"/>
+                <rect x="10" y="14" width="24" height="8" rx="2" fill="none" stroke="#f2cc83" stroke-width="1.7"/>
+                <rect x="20" y="26" width="10" height="6" rx="1" fill="none" stroke="#f2cc83" stroke-width="1.5"/>
+                <circle cx="46" cy="36" r="10" fill="none" stroke="#f2cc83" stroke-width="1.7"/>
+                <path d="M46 31 v5 l4 2" stroke="#f2cc83" stroke-width="1.5" stroke-linecap="round"/>
+                <g fill="#f2cc83">
+                  <path d="M44 6 l2 2 2-2 -2-2z M52 10 l1.5 1.5 1.5-1.5 -1.5-1.5z M38 12 l1 1 1-1 -1-1z"/>
+                </g>
+              </svg>
+            </div>
+            <div class="text-left">
+              <div class="font-black text-white leading-tight text-[19px] sm:text-[28px] lg:text-[32px]">1,000+ Ready-to-Use<br class="sm:hidden"> Secret Prompts Included</div>
+              <div class="text-[#7de7e0] font-semibold text-[16px] sm:text-[20px] lg:text-[22px] mt-1">for Automated Growth</div>
+            </div>
+            <div class="hidden lg:block absolute bottom-0 right-6 opacity-30">
+              <svg width="70" height="30" viewBox="0 0 70 30"><path d="M0 28 V10 H10 V4 H30" stroke="#7de7e0" stroke-width="0.6" fill="none"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+          <button onclick="generatePDF('full')" class="btn-cyan justify-center text-[15px] px-7 py-[15px] shadow-[0_10px_30px_rgba(0,229,204,0.35)]">
+            <i class="fa-solid fa-bolt"></i> Get Instant Access — $29
+          </button>
+          <button onclick="document.getElementById('preview').scrollIntoView({behavior:'smooth'})" class="btn-dark justify-center bg-white/5 backdrop-blur">
+            <i class="fa-regular fa-eye"></i> Preview Inside
+          </button>
+        </div>
+        <div class="mt-3 flex flex-wrap items-center justify-center lg:justify-start gap-2 text-xs font-semibold text-white/70">
+          <span class="inline-flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-[#00e5cc]"></i> 30-Day Money-Back</span>
+          <span class="opacity-30">•</span>
+          <span class="inline-flex items-center gap-1.5"><i class="fa-solid fa-file-pdf text-[#f2cc83]"></i> PDF + Notion + Sheets</span>
+          <span class="opacity-30">•</span>
+          <span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> 14,283 creators inside</span>
+        </div>
+
+        <!-- mini features -->
+        <div class="mt-8 grid grid-cols-3 gap-3 sm:gap-6 max-w-[620px] mx-auto lg:mx-0 pt-6 border-t border-white/10">
+          <div class="text-center">
+            <div class="mx-auto w-14 h-14 sm:w-16 sm:h-16 grid place-items-center">
+              <svg viewBox="0 0 64 64" class="w-12 h-12 sm:w-14 sm:h-14"><path d="M38 12 L50 8 L46 20 L48 28 L38 36 L30 28 L32 20 Z" fill="none" stroke="#00e5cc" stroke-width="1.8"/><circle cx="38" cy="22" r="6" fill="none" stroke="#00e5cc" stroke-width="1.5"/><path d="M22 46 L26 38 L30 48 L34 40 L36 46" fill="#f2cc83" stroke="#f2cc83" stroke-width="1.2"/></svg>
+            </div>
+            <div class="text-white font-bold text-[11px] sm:text-[13px] leading-tight">Proven Prompt<br>Frameworks</div>
+          </div>
+          <div class="text-center border-x border-white/10 px-2">
+            <div class="mx-auto w-14 h-14 sm:w-16 sm:h-16 grid place-items-center text-[#f2cc83]">
+              <svg viewBox="0 0 64 64" class="w-12 h-12 sm:w-14 sm:h-14">
+                <rect x="10" y="34" width="10" height="12" rx="1.5" fill="currentColor"/><rect x="24" y="28" width="10" height="18" rx="1.5" fill="currentColor"/><rect x="38" y="20" width="10" height="26" rx="1.5" fill="currentColor"/>
+                <path d="M10 34 L24 24 L38 32 L52 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M42 14 H52 V24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+                <text x="14" y="14" font-size="13" font-weight="800" fill="currentColor">$</text>
+              </svg>
+            </div>
+            <div class="text-white font-bold text-[11px] sm:text-[13px] leading-tight">Build & Scale<br>Your Side Hustle</div>
+          </div>
+          <div class="text-center">
+            <div class="mx-auto w-14 h-14 sm:w-16 sm:h-16 grid place-items-center">
+              <svg viewBox="0 0 64 64" class="w-12 h-12 sm:w-14 sm:h-14"><circle cx="32" cy="32" r="14" fill="none" stroke="#00e5cc" stroke-width="2"/><path d="M32 18 V25 M32 39 V46 M18 32 H25 M39 32 H46 M22 22 L27 27 M37 37 L42 42 M42 22 L37 27 M27 37 L22 42" stroke="#00e5cc" stroke-width="1.8" stroke-linecap="round"/><circle cx="32" cy="32" r="5" fill="none" stroke="#00e5cc" stroke-width="1.4" stroke-dasharray="3 3"/></svg>
+            </div>
+            <div class="text-white font-bold text-[11px] sm:text-[13px] leading-tight">Automate Clients<br>& Income</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right visual -->
+      <div class="relative lg:pl-4 mt-2 lg:mt-0">
+        <div class="relative mx-auto w-[280px] sm:w-[380px] lg:w-[440px]">
+          <div class="absolute -inset-6 bg-[#00e5cc]/15 blur-[50px] rounded-[40px]"></div>
+          <div class="absolute -top-4 -right-4 bg-white text-[#051a30] rounded-2xl px-4 py-3 shadow-xl flex items-center gap-2 z-20">
+            <span class="w-8 h-8 rounded-full bg-[#00e5cc] grid place-items-center text-[#051a30]"><i class="fa-solid fa-wand-magic-sparkles text-xs"></i></span>
+            <div class="leading-tight">
+              <div class="font-black text-sm">1,000+ Prompts</div>
+              <div class="text-[11px] font-semibold text-black/60">Copy • Paste • Profit</div>
+            </div>
+          </div>
+          <!-- Book -->
+          <div class="relative book-shadow rounded-[18px] overflow-hidden bg-[#061b33] p-[6px]">
+            <div class="rounded-[14px] overflow-hidden relative">
+              <img src="https://www.designarena.ai/u/dda7db16-c077-4755-bafb-92e7db83e7e9" alt="The AI Income Blueprint Cover" class="w-full h-auto object-cover block">
+              <div class="absolute inset-0 ring-1 ring-white/10 rounded-[14px] pointer-events-none"></div>
+            </div>
+            <!-- spine highlight -->
+            <div class="absolute top-0 left-[6px] bottom-0 w-[14px] bg-gradient-to-r from-white/30 to-transparent opacity-40 pointer-events-none"></div>
+          </div>
+          <!-- bottom float -->
+          <div class="absolute -bottom-6 -left-2 sm:left-0 bg-[#0b2340] border border-white/15 rounded-2xl px-4 py-3 flex items-center gap-3 shadow-2xl z-20">
+            <div class="w-10 h-10 rounded-xl bg-[#f2cc83] grid place-items-center text-[#051a30]"><i class="fa-solid fa-chart-line"></i></div>
+            <div>
+              <div class="font-black text-white text-sm leading-none">Average +$1,240/mo</div>
+              <div class="text-[11px] text-white/60 font-semibold">first 60 days — 18-35 study</div>
+            </div>
+            <div class="hidden sm:flex items-center gap-1 text-emerald-400 font-bold text-xs"><i class="fa-solid fa-arrow-trend-up"></i> +34%</div>
+          </div>
+          <!-- dots -->
+          <div class="absolute -bottom-10 right-8 hidden sm:flex gap-1 opacity-40"><span class="w-1 h-1 bg-[#00e5cc] rounded-full"></span><span class="w-1 h-1 bg-[#00e5cc] rounded-full"></span><span class="w-1 h-1 bg-white rounded-full"></span></div>
+        </div>
+        <!-- stats under book -->
+        <div class="mt-12 sm:mt-10 flex justify-center lg:justify-end">
+          <div class="flex items-center gap-4 sm:gap-6 bg-[#0b2340]/80 backdrop-blur border border-white/10 rounded-full px-5 py-3">
+            <div class="flex items-center gap-2 text-xs font-bold text-white"><i class="fa-solid fa-book-open text-[#00e5cc]"></i> 248 Pages</div>
+            <span class="w-px h-4 bg-white/15"></span>
+            <div class="flex items-center gap-2 text-xs font-bold text-white"><i class="fa-solid fa-layer-group text-[#f2cc83]"></i> 50 Templates</div>
+            <span class="w-px h-4 bg-white/15"></span>
+            <div class="flex items-center gap-2 text-xs font-bold text-white"><i class="fa-solid fa-star text-yellow-400"></i> 4.9/5</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- bottom bar -->
+  <div class="relative mt-10 bg-[#0a3a45] border-t border-[#00e5cc]/30">
+    <div class="max-w-[1280px] mx-auto px-4 py-3.5 text-center">
+      <div class="text-white font-black tracking-[0.14em] text-[11px] sm:text-[13px]">YOUR ROADMAP TO AI-POWERED FREELANCE INCOME • 2027</div>
+    </div>
+  </div>
+</section>
+
+<!-- Logos / social proof -->
+<section class="bg-[#081f3a] border-y border-white/10">
+  <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-wrap items-center justify-between gap-6">
+    <div class="text-white/60 text-[11px] font-bold tracking-[0.18em]">FEATURED & TRUSTED BY</div>
+    <div class="flex flex-wrap items-center gap-6 sm:gap-10 text-white/80 font-black text-sm sm:text-base">
+      <span class="flex items-center gap-2"><i class="fa-brands fa-product-hunt"></i> Product Hunt #1</span>
+      <span class="hidden sm:inline opacity-20">•</span>
+      <span>INDIE HACKERS</span>
+      <span class="hidden sm:inline opacity-20">•</span>
+      <span class="flex items-center gap-2"><i class="fa-brands fa-upwork"></i> Upwork Stars</span>
+      <span class="hidden sm:inline opacity-20">•</span>
+      <span>FIVERR PRO</span>
+    </div>
+    <div class="flex items-center gap-2 text-[#f2cc83] font-bold text-sm ml-auto">
+      <span class="flex -space-x-2">
+        <img src="https://i.pravatar.cc/100?img=33" class="w-7 h-7 rounded-full border-2 border-[#081f3a]">
+        <img src="https://i.pravatar.cc/100?img=32" class="w-7 h-7 rounded-full border-2 border-[#081f3a]">
+        <img src="https://i.pravatar.cc/100?img=26" class="w-7 h-7 rounded-full border-2 border-[#081f3a]">
+      </span>
+      <span>2,847 reviews</span>
+      <span class="text-yellow-400">★★★★★</span>
+    </div>
+  </div>
+</section>
+
+<!-- Inside the blueprint -->
+<section id="inside" class="bg-[#f8fafc] text-[#0f172a] py-12 sm:py-16">
+  <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+      <div>
+        <div class="inline-flex items-center gap-2 bg-[#00e5cc]/15 text-[#0a5a60] font-extrabold text-xs tracking-widest px-3 py-1.5 rounded-full">INSIDE THE BLUEPRINT • 6 CORE MODULES</div>
+        <h2 class="mt-3 text-[30px] sm:text-[40px] font-black leading-none text-[#051a30]">Built for 18–35: Zero to<br>Paying Clients in 30 Days</h2>
+        <p class="mt-3 text-slate-600 font-medium max-w-[620px]">No fluff. Each chapter gives you fill-in-the-blank prompts, client scripts, and automation templates you can run today — even with no audience.</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="hidden sm:flex items-center gap-2 bg-white border border-slate-200 rounded-full px-4 py-2 text-sm font-bold"><span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span> Updated for GPT-4o & Claude 3.5</div>
+        <button onclick="generatePDF('sample')" class="hidden lg:inline-flex items-center gap-2 bg-[#051a30] text-white px-5 py-3 rounded-full font-bold text-sm"><i class="fa-solid fa-file-arrow-down"></i> Download TOC PDF</button>
+      </div>
+    </div>
+
+    <div class="mt-8 grid lg:grid-cols-[300px_1fr] gap-6">
+      <div class="flex lg:flex-col gap-2 overflow-x-auto hide-scrollbar pb-2 lg:pb-0">
+        <button data-tab="0" class="tab-btn active flex items-center gap-3 text-left p-4 rounded-2xl bg-[#051a30] text-white min-w-[220px] lg:min-w-0">
+          <span class="w-8 h-8 rounded-full bg-[#00e5cc] text-[#051a30] grid place-items-center font-black text-sm">01</span>
+          <span><span class="block font-black text-sm leading-none">Find Your $2k Skill</span><span class="text-xs opacity-70">Niche + offer in 48h</span></span>
+        </button>
+        <button data-tab="1" class="tab-btn flex items-center gap-3 text-left p-4 rounded-2xl bg-white border border-slate-200 min-w-[220px] lg:min-w-0">
+          <span class="w-8 h-8 rounded-full bg-slate-100 grid place-items-center font-black text-sm text-slate-600">02</span>
+          <span><span class="block font-black text-sm leading-none">Prompt Engineering</span><span class="text-xs text-slate-500">The 4-part formula</span></span>
+        </button>
+        <button data-tab="2" class="tab-btn flex items-center gap-3 text-left p-4 rounded-2xl bg-white border border-slate-200 min-w-[220px] lg:min-w-0">
+          <span class="w-8 h-8 rounded-full bg-slate-100 grid place-items-center font-black text-sm text-slate-600">03</span>
+          <span><span class="block font-black text-sm leading-none">Client Acquisition</span><span class="text-xs text-slate-500">No cold DMs needed</span></span>
+        </button>
+        <button data-tab="3" class="tab-btn flex items-center gap-3 text-left p-4 rounded-2xl bg-white border border-slate-200 min-w-[220px] lg:min-w-0">
+          <span class="w-8 h-8 rounded-full bg-slate-100 grid place-items-center font-black text-sm text-slate-600">04</span>
+          <span><span class="block font-black text-sm leading-none">Automation Stack</span><span class="text-xs text-slate-500">Zapier + AI workflows</span></span>
+        </button>
+        <button data-tab="4" class="tab-btn flex items-center gap-3 text-left p-4 rounded-2xl bg-white border border-slate-200 min-w-[220px] lg:min-w-0">
+          <span class="w-8 h-8 rounded-full bg-slate-100 grid place-items-center font-black text-sm text-slate-600">05</span>
+          <span><span class="block font-black text-sm leading-none">Scale to $5k/mo</span><span class="text-xs text-slate-500">Retainers & upsells</span></span>
+        </button>
+      </div>
+      <div id="tabPanels" class="bg-white border border-slate-200 rounded-[24px] p-6 sm:p-8 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-[#00e5cc]/10 blur-3xl rounded-full pointer-events-none"></div>
+        <!-- Panel 0 -->
+        <div data-panel="0" class="tab-panel">
+          <div class="flex flex-wrap items-center gap-2 mb-4">
+            <span class="bg-[#fef3c7] text-amber-800 font-bold text-xs px-3 py-1 rounded-full">MODULE 01</span>
+            <span class="text-slate-500 text-xs font-semibold">• 42 pages • 184 prompts • Worksheets included</span>
+          </div>
+          <h3 class="text-2xl font-black text-[#051a30] leading-tight">Turn AI into a sellable skill — even if you’re starting from zero.</h3>
+          <p class="mt-2 text-slate-600 font-medium">Use the Skill-Matrix prompt to find a high-demand service you can deliver in 2 hours with ChatGPT: UGC scripts, SEO blogs, Notion systems, ad creatives.</p>
+          <div class="mt-6 grid sm:grid-cols-2 gap-4">
+            <div class="bg-[#f1f5f9] rounded-2xl p-4">
+              <div class="text-xs font-black tracking-widest text-slate-500">PROMPT PREVIEW</div>
+              <div class="mt-2 font-mono text-[13px] leading-relaxed bg-white border border-slate-200 rounded-xl p-3">Act as a 2027 freelance strategist for Gen Z. Given my skills [X], time [Y hrs/week], and goal [$2000/mo], rank the top 5 AI services I can sell with price, delivery time, and first 3 clients to target...</div>
+              <button onclick="copyText('Act as a 2027 freelance strategist for Gen Z. Given my skills [X], time [Y hrs/week], and goal [$2000/mo], rank the top 5 AI services...')" class="mt-3 text-xs font-bold text-[#0a7a82] flex items-center gap-1"><i class="fa-regular fa-copy"></i> Copy prompt</button>
+            </div>
+            <div class="space-y-3">
+              <div class="flex gap-3 items-start"><span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 grid place-items-center text-xs"><i class="fa-solid fa-check"></i></span><span class="text-sm font-semibold text-slate-700">Offer builder canvas + pricing calculator</span></div>
+              <div class="flex gap-3 items-start"><span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 grid place-items-center text-xs"><i class="fa-solid fa-check"></i></span><span class="text-sm font-semibold text-slate-700">7 validated niches for 18–35 with low competition</span></div>
+              <div class="flex gap-3 items-start"><span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 grid place-items-center text-xs"><i class="fa-solid fa-check"></i></span><span class="text-sm font-semibold text-slate-700">Case study: Mia, 22 — $1,840 in 18 days</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- Panel 1 -->
+        <div data-panel="1" class="tab-panel hidden">
+          <div class="flex flex-wrap items-center gap-2 mb-4">
+            <span class="bg-[#ccfbf1] text-teal-800 font-bold text-xs px-3 py-1 rounded-full">MODULE 02</span>
+            <span class="text-slate-500 text-xs font-semibold">• 58 pages • 310 prompts</span>
+          </div>
+          <h3 class="text-2xl font-black text-[#051a30] leading-tight">Master the 4-part prompt formula that out-performs 99% of users.</h3>
+          <p class="mt-2 text-slate-600 font-medium">Role • Context • Task • Constraints. Steal 20 plug-and-play frameworks for writing, design, code and research that make ChatGPT think like a pro.</p>
+          <div class="mt-6 bg-[#0b2340] text-white rounded-2xl p-5 font-mono text-sm leading-relaxed">You are [ROLE] for [AUDIENCE 18-35]. CONTEXT: [project]. TASK: [outcome]. CONSTRAINTS: [tone, length, format]. Iterate until 9/10. Now execute…</div>
+        </div>
+        <!-- Panel 2 -->
+        <div data-panel="2" class="tab-panel hidden">
+          <div class="flex flex-wrap items-center gap-2 mb-4">
+            <span class="bg-[#ffedd5] text-orange-800 font-bold text-xs px-3 py-1 rounded-full">MODULE 03</span>
+            <span class="text-slate-500 text-xs font-semibold">• 48 pages • 220 prompts</span>
+          </div>
+          <h3 class="text-2xl font-black text-[#051a30] leading-tight">Get clients without cold outreach or a following.</h3>
+          <p class="mt-2 text-slate-600 font-medium">The Inbound Engine: AI-generated LinkedIn posts, Upwork proposals, and DM scripts that pull 3–5 qualified leads/week on autopilot.</p>
+          <ul class="mt-4 space-y-2 text-sm font-semibold text-slate-700 list-disc pl-5">
+            <li>AI Upwork proposal generator (38% win rate)</li>
+            <li>30-day content calendar for X + LinkedIn</li>
+            <li>Discovery call script that closes 60%</li>
+          </ul>
+        </div>
+        <!-- Panel 3 -->
+        <div data-panel="3" class="tab-panel hidden">
+          <h3 class="text-2xl font-black text-[#051a30]">Build your client machine with no code.</h3>
+          <p class="mt-2 text-slate-600">Zapier, Make, and GPT workflows for onboarding, delivery, and invoicing — save 11 hrs/week.</p>
+          <div class="mt-4 grid grid-cols-3 gap-3 text-center">
+            <div class="bg-slate-50 rounded-xl p-3 border"><i class="fa-solid fa-bolt text-amber-500"></i><div class="text-xs font-bold mt-1">Auto-delivery</div></div>
+            <div class="bg-slate-50 rounded-xl p-3 border"><i class="fa-solid fa-robot text-cyan-600"></i><div class="text-xs font-bold mt-1">Client bot</div></div>
+            <div class="bg-slate-50 rounded-xl p-3 border"><i class="fa-solid fa-file-invoice text-emerald-600"></i><div class="text-xs font-bold mt-1">Auto-invoice</div></div>
+          </div>
+        </div>
+        <div data-panel="4" class="tab-panel hidden">
+          <h3 class="text-2xl font-black text-[#051a30]">From side hustle to $5k retainers.</h3>
+          <p class="mt-2 text-slate-600">Package, price, and upsell: productized offers, value ladders, and AI-assisted outreach to double MRR in 60 days.</p>
+          <div class="mt-4 bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm font-semibold text-amber-900">Bonus: 12-month retainer contract template + upsell email sequence (copy-paste).</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Prompt Library -->
+<section id="prompts" class="bg-[#051a30] py-12 sm:py-16 relative overflow-hidden">
+  <div class="absolute inset-0 opacity-20" style="background-image:linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px); background-size:40px 40px"></div>
+  <div class="relative max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+      <div>
+        <div class="inline-flex items-center gap-2 border border-[#00e5cc]/30 text-[#00e5cc] font-bold text-xs tracking-widest px-3 py-1.5 rounded-full bg-white/5">1,000+ SECRET PROMPTS • LIVE LIBRARY</div>
+        <h2 class="mt-3 text-[30px] sm:text-[42px] font-black leading-none">Copy. Paste. Get Paid.</h2>
+        <p class="mt-2 text-white/70 font-medium max-w-[560px]">Search the actual database. Every prompt is tagged, tested, and tuned for freelancing. Click copy and run it in ChatGPT.</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="bg-white text-[#051a30] rounded-full px-4 py-2 font-black text-sm flex items-center gap-2"><span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span> <span id="promptCountLabel">1,024 prompts</span></div>
+        <button onclick="generatePDF('full')" class="hidden sm:inline-flex bg-[#00e5cc] text-[#051a30] font-black px-5 py-2.5 rounded-full text-sm">Unlock All — $29</button>
+      </div>
+    </div>
+
+    <div class="mt-6 bg-[#0b2340] border border-white/10 rounded-[20px] p-4 sm:p-5">
+      <div class="flex flex-col lg:flex-row gap-4 items-stretch lg:items-center">
+        <div class="flex-1 relative">
+          <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-white/40"></i>
+          <input id="promptSearch" placeholder="Search prompts: 'Upwork proposal', 'Instagram carousel', 'Notion system'..." class="w-full bg-[#051a30] border border-white/10 rounded-full pl-11 pr-4 py-3.5 text-sm text-white placeholder:text-white/40 focus:outline-none focus:border-[#00e5cc] transition">
+        </div>
+        <div class="flex items-center gap-2">
+          <select id="sortSelect" class="bg-[#051a30] border border-white/10 rounded-full px-4 py-3 text-sm font-semibold text-white">
+            <option>Most Popular</option>
+            <option>Newest</option>
+            <option>Freelancing First</option>
+          </select>
+          <button id="clearFilters" class="hidden sm:inline-flex text-white/60 font-semibold text-sm px-3">Clear</button>
+        </div>
+      </div>
+      <div class="mt-4 flex gap-2 overflow-x-auto hide-scrollbar pb-1">
+        <button data-filter="all" class="chip active">All</button>
+        <button data-filter="Freelancing" class="chip">Freelancing</button>
+        <button data-filter="Client Acq" class="chip">Client Acquisition</button>
+        <button data-filter="Content" class="chip">Content & Copy</button>
+        <button data-filter="Design" class="chip">Design</button>
+        <button data-filter="Automation" class="chip">Automation</button>
+        <button data-filter="Pricing" class="chip">Pricing & Offers</button>
+        <button data-filter="Outreach" class="chip">Outreach</button>
+      </div>
+    </div>
+
+    <div id="promptGrid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- JS injected -->
+    </div>
+    <div class="mt-6 flex justify-center">
+      <button id="loadMoreBtn" class="bg-white/10 hover:bg-white/15 border border-white/15 text-white font-bold px-6 py-3 rounded-full text-sm transition">Load 9 more prompts</button>
+    </div>
+  </div>
+</section>
+
+<!-- Preview / Reader -->
+<section id="preview" class="bg-[#f1f5f9] py-12 sm:py-16">
+  <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 items-center">
+      <div>
+        <div class="inline-flex items-center gap-2 bg-[#051a30] text-white font-extrabold text-xs tracking-widest px-3 py-1.5 rounded-full">FLIPBOOK PREVIEW • TRY BEFORE YOU BUY</div>
+        <h2 class="mt-3 text-[30px] sm:text-[40px] font-black leading-none text-[#051a30]">Read the first 12 pages<br>right in your browser.</h2>
+        <p class="mt-3 text-slate-600 font-medium">Interactive reader — no download needed. Jump pages, copy prompts, and export a sample PDF. Built for mobile-first 18–35 creators.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <button onclick="generatePDF('sample')" class="inline-flex items-center gap-2 bg-[#00e5cc] text-[#051a30] font-black px-6 py-3 rounded-full text-sm"><i class="fa-solid fa-file-pdf"></i> Download Sample PDF (12 pages)</button>
+          <button onclick="generatePDF('full')" class="inline-flex items-center gap-2 bg-white border border-slate-300 text-[#051a30] font-bold px-6 py-3 rounded-full text-sm"><i class="fa-solid fa-download"></i> Get Full 248-Page PDF</button>
+        </div>
+        <div class="mt-6 grid grid-cols-3 gap-3 max-w-[420px]">
+          <div class="bg-white border border-slate-200 rounded-2xl p-3 text-center"><div class="font-black text-[#051a30]">4.9/5</div><div class="text-[11px] font-bold text-slate-500">2,847 ratings</div></div>
+          <div class="bg-white border border-slate-200 rounded-2xl p-3 text-center"><div class="font-black text-[#051a30]">PDF + EPUB</div><div class="text-[11px] font-bold text-slate-500">+ Notion DB</div></div>
+          <div class="bg-white border border-slate-200 rounded-2xl p-3 text-center"><div class="font-black text-emerald-600">Instant</div><div class="text-[11px] font-bold text-slate-500">Delivery via email</div></div>
+        </div>
+      </div>
+
+      <!-- Reader -->
+      <div class="bg-white border border-slate-200 rounded-[24px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
+        <div class="bg-[#051a30] text-white px-4 sm:px-5 py-3 flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <span class="w-7 h-7 rounded-full bg-[#00e5cc] grid place-items-center text-[#051a30]"><i class="fa-solid fa-book-open text-xs"></i></span>
+            <div class="leading-tight">
+              <div class="font-black text-sm">The AI Income Blueprint — Preview</div>
+              <div class="text-xs text-white/60">Page <span id="readerPageNum">1</span> of 6 • 2027 Edition</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <button id="zoomOut" class="w-8 h-8 rounded-full bg-white/10 grid place-items-center"><i class="fa-solid fa-minus text-xs"></i></button>
+            <button id="zoomIn" class="w-8 h-8 rounded-full bg-white/10 grid place-items-center"><i class="fa-solid fa-plus text-xs"></i></button>
+          </div>
+        </div>
+        <div id="readerStage" class="relative bg-[#f8fafc] p-4 sm:p-6 min-h-[420px] sm:min-h-[480px] flex">
+          <div id="readerContent" class="bg-white border border-slate-200 rounded-xl flex-1 p-6 sm:p-8 shadow-sm overflow-auto leading-relaxed transition-all" style="font-size:15px">
+            <!-- injected -->
+          </div>
+        </div>
+        <div class="px-4 sm:px-6 py-4 bg-white border-t border-slate-200 flex items-center justify-between">
+          <button id="prevPage" class="px-4 py-2 rounded-full border border-slate-300 font-bold text-sm flex items-center gap-2"><i class="fa-solid fa-chevron-left text-xs"></i> Prev</button>
+          <div class="flex items-center gap-1.5" id="readerDots"></div>
+          <button id="nextPage" class="px-4 py-2 rounded-full bg-[#051a30] text-white font-bold text-sm flex items-center gap-2">Next <i class="fa-solid fa-chevron-right text-xs"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section id="pricing" class="bg-[#051a30] py-12 sm:py-16 relative">
+  <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-[720px] mx-auto">
+      <div class="inline-flex items-center gap-2 border border-[#00e5cc]/30 text-[#00e5cc] font-bold text-xs tracking-widest px-3 py-1.5 rounded-full bg-white/5">PRICING • ONE-TIME, LIFETIME UPDATES</div>
+      <h2 class="mt-4 text-[30px] sm:text-[44px] font-black leading-none">Invest Once. Profit for Years.</h2>
+      <p class="mt-3 text-white/70 font-medium">18–35 launch pricing. No subscriptions. Get the full prompt vault + templates and future 2028 updates free.</p>
+      <div class="mt-5 inline-flex bg-[#0b2340] border border-white/10 rounded-full p-1">
+        <button id="billingOnce" class="px-5 py-2 rounded-full bg-white text-[#051a30] font-black text-sm">Pay Once</button>
+        <button id="billingBundle" class="px-5 py-2 rounded-full text-white/70 font-bold text-sm">Bundle & Save 37%</button>
+      </div>
+    </div>
+
+    <div class="mt-8 grid lg:grid-cols-3 gap-6 max-w-[1100px] mx-auto">
+      <div class="bg-white rounded-[24px] p-6 sm:p-7 text-[#0f172a] flex flex-col">
+        <div class="font-black tracking-widest text-xs text-slate-500">STARTER</div>
+        <div class="mt-2 flex items-baseline gap-2"><span class="text-4xl font-black">$19</span><span class="text-slate-500 font-semibold">PDF only</span></div>
+        <ul class="mt-5 space-y-3 text-sm font-semibold text-slate-700">
+          <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> 248-page PDF (2027 Edition)</li>
+          <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> 300 starter prompts</li>
+          <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Reading companion sheet</li>
+        </ul>
+        <button onclick="addToCart('Starter',19)" class="mt-6 w-full bg-[#051a30] text-white font-black py-3 rounded-full">Get Starter</button>
+        <div class="mt-3 text-center text-xs font-semibold text-slate-500">30-day guarantee</div>
+      </div>
+
+      <div class="bg-[#00e5cc] rounded-[24px] p-[2px] flex flex-col scale-[1.02] shadow-[0_20px_50px_rgba(0,229,204,0.35)]">
+        <div class="bg-white rounded-[22px] p-6 sm:p-7 flex-1 flex flex-col relative overflow-hidden">
+          <div class="absolute top-4 right-4 bg-[#051a30] text-white text-[11px] font-black tracking-widest px-3 py-1 rounded-full">MOST POPULAR • 18-35</div>
+          <div class="font-black tracking-widest text-xs text-[#0a7a82]">BLUEPRINT PRO</div>
+          <div class="mt-2 flex items-baseline gap-2"><span class="text-4xl font-black">$29</span><span class="line-through text-slate-400 font-bold">$49</span><span class="bg-[#fef3c7] text-amber-700 px-2 py-1 rounded-full text-xs font-black">Save 40%</span></div>
+          <div class="text-xs font-bold text-slate-500">One-time • Instant delivery</div>
+          <ul class="mt-5 space-y-3 text-sm font-semibold text-slate-700">
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Everything in Starter, plus:</li>
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> <span><b>1,000+ prompts</b> — Notion + Sheet vault</span></li>
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> 50 copy-paste templates & scripts</li>
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Automation Zaps (Zapier/Make)</li>
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Free 2028 edition update</li>
+          </ul>
+          <button onclick="addToCart('Blueprint Pro',29)" class="mt-6 w-full bg-[#051a30] text-white font-black py-3.5 rounded-full text-[15px] shadow-lg">Get Instant Access</button>
+          <div class="mt-3 flex items-center justify-center gap-2 text-xs font-bold text-slate-600"><i class="fa-solid fa-lock text-emerald-500"></i> Secure checkout • PDF delivered in 2 minutes</div>
+          <div class="mt-4 flex items-center justify-center gap-3 opacity-60">
+            <i class="fa-brands fa-cc-visa text-xl"></i><i class="fa-brands fa-cc-mastercard text-xl"></i><i class="fa-brands fa-cc-paypal text-xl"></i><i class="fa-brands fa-apple-pay text-xl"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#0b2340] border border-white/10 rounded-[24px] p-6 sm:p-7 text-white flex flex-col">
+        <div class="font-black tracking-widest text-xs text-white/60">AGENCY PACK</div>
+        <div class="mt-2 flex items-baseline gap-2"><span class="text-4xl font-black">$69</span><span class="text-white/60 font-semibold">Team license</span></div>
+        <ul class="mt-5 space-y-3 text-sm font-semibold text-white/85">
+          <li class="flex gap-2"><i class="fa-solid fa-check text-[#00e5cc] mt-1"></i> Everything in Pro</li>
+          <li class="flex gap-2"><i class="fa-solid fa-check text-[#00e5cc] mt-1"></i> Team license (5 seats)</li>
+          <li class="flex gap-2"><i class="fa-solid fa-check text-[#00e5cc] mt-1"></i> Client proposal deck + contract pack</li>
+          <li class="flex gap-2"><i class="fa-solid fa-check text-[#00e5cc] mt-1"></i> 1-hour workshop replay</li>
+        </ul>
+        <button onclick="addToCart('Agency Pack',69)" class="mt-6 w-full bg-white text-[#051a30] font-black py-3 rounded-full">Get Agency Pack</button>
+        <div class="mt-3 text-center text-xs font-semibold text-white/50">For studios & collectives 18–35</div>
+      </div>
+    </div>
+
+    <div class="mt-6 flex flex-wrap items-center justify-center gap-4 text-xs font-bold text-white/60">
+      <span class="flex items-center gap-2"><i class="fa-solid fa-shield-halved text-emerald-400"></i> 30-day money-back</span>
+      <span class="opacity-20">•</span>
+      <span>Used by 14,283 freelancers</span>
+      <span class="opacity-20">•</span>
+      <span class="flex items-center gap-1 text-yellow-400">★★★★★ <span class="text-white/60 ml-1">4.9/5 average</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="bg-[#f8fafc] py-12 sm:py-16">
+  <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-end justify-between gap-4">
+      <h2 class="text-[28px] sm:text-[34px] font-black leading-none text-[#051a30]">Real 18–35 creators.<br>Real income, fast.</h2>
+      <div class="hidden sm:flex items-center gap-2 text-sm font-bold text-slate-600"><span class="w-8 h-8 rounded-full bg-white border grid place-items-center"><i class="fa-solid fa-arrow-left"></i></span><span class="w-8 h-8 rounded-full bg-[#051a30] text-white grid place-items-center"><i class="fa-solid fa-arrow-right"></i></span></div>
+    </div>
+    <div class="mt-6 grid md:grid-cols-3 gap-4">
+      <div class="bg-white border border-slate-200 rounded-2xl p-5">
+        <div class="flex items-center gap-3">
+          <img src="https://i.pravatar.cc/100?img=15" class="w-10 h-10 rounded-full">
+          <div><div class="font-black text-sm">Maya, 24 • Berlin</div><div class="text-xs font-semibold text-slate-500">From barista to $2.1k/mo</div></div>
+          <span class="ml-auto text-yellow-400 text-xs">★★★★★</span>
+        </div>
+        <p class="mt-3 text-sm font-medium text-slate-700 leading-relaxed">“The Upwork prompts literally wrote my proposals. Landed 3 clients in 11 days. The automation chapter saved me 8 hours a week.”</p>
+        <div class="mt-3 inline-flex bg-emerald-50 text-emerald-700 text-xs font-black px-2.5 py-1 rounded-full">+$2,140 in 28 days</div>
+      </div>
+      <div class="bg-white border border-slate-200 rounded-2xl p-5">
+        <div class="flex items-center gap-3">
+          <img src="https://i.pravatar.cc/100?img=12" class="w-10 h-10 rounded-full">
+          <div><div class="font-black text-sm">Jordan, 27 • Austin</div><div class="text-xs font-semibold text-slate-500">SEO blogs + AI</div></div>
+          <span class="ml-auto text-yellow-400 text-xs">★★★★★</span>
+        </div>
+        <p class="mt-3 text-sm font-medium text-slate-700 leading-relaxed">“I copied the content system prompts — now I deliver 10 blogs/week half the time. Retainer jumped to $1,500.”</p>
+        <div class="mt-3 inline-flex bg-emerald-50 text-emerald-700 text-xs font-black px-2.5 py-1 rounded-full">First $1k in 16 days</div>
+      </div>
+      <div class="bg-white border border-slate-200 rounded-2xl p-5">
+        <div class="flex items-center gap-3">
+          <img src="https://i.pravatar.cc/100?img=8" class="w-10 h-10 rounded-full">
+          <div><div class="font-black text-sm">Sofia, 21 • Madrid</div><div class="text-xs font-semibold text-slate-500">UGC scripts</div></div>
+          <span class="ml-auto text-yellow-400 text-xs">★★★★★</span>
+        </div>
+        <p class="mt-3 text-sm font-medium text-slate-700 leading-relaxed">“No design skills. Used the Design prompts to make carousels for a skincare brand — $800 project, now monthly.”</p>
+        <div class="mt-3 inline-flex bg-emerald-50 text-emerald-700 text-xs font-black px-2.5 py-1 rounded-full">$800 → $1.6k retainer</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="bg-white py-12 sm:py-16 border-t border-slate-200">
+  <div class="max-w-[900px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+      <div class="inline-flex bg-slate-100 text-slate-700 font-black text-xs tracking-widest px-3 py-1.5 rounded-full">FAQ • FOR FIRST-TIMERS 18–35</div>
+      <h2 class="mt-3 text-[30px] sm:text-[40px] font-black leading-none text-[#051a30]">Got questions? We got prompts.</h2>
+    </div>
+    <div class="mt-8 space-y-3" id="faqList">
+      <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden">
+        <button class="faq-q w-full flex items-center justify-between p-5 text-left font-bold text-[#051a30]">Do I need ChatGPT Plus or coding skills? <span class="w-8 h-8 rounded-full bg-slate-100 grid place-items-center text-slate-600"><i class="fa-solid fa-chevron-down text-xs transition"></i></span></button>
+        <div class="faq-a hidden px-5 pb-5 text-sm font-medium text-slate-600 leading-relaxed">No. Works with free ChatGPT, Claude, or any LLM. No code. Every prompt is copy-paste with a 2-min Loom showing how to run it.</div>
+      </div>
+      <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden">
+        <button class="faq-q w-full flex items-center justify-between p-5 text-left font-bold text-[#051a30]">How is this different from free prompts on X/Twitter? <span class="w-8 h-8 rounded-full bg-slate-100 grid place-items-center text-slate-600"><i class="fa-solid fa-chevron-down text-xs transition"></i></span></button>
+        <div class="faq-a hidden px-5 pb-5 text-sm font-medium text-slate-600 leading-relaxed">These are not one-liners. Each prompt is a system: role + context + constraints + iteration loops, tested with 14k freelancers for real client outcomes.</div>
+      </div>
+      <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden">
+        <button class="faq-q w-full flex items-center justify-between p-5 text-left font-bold text-[#051a30]">Is it really 1,000 prompts? How do I not get overwhelmed? <span class="w-8 h-8 rounded-full bg-slate-100 grid place-items-center text-slate-600"><i class="fa-solid fa-chevron-down text-xs transition"></i></span></button>
+        <div class="faq-a hidden px-5 pb-5 text-sm font-medium text-slate-600 leading-relaxed">Yes — 1,024 categorized in Notion & Sheets with filters (skill, platform, time). Start with the 7-day fast-track: 1 prompt per day to first client.</div>
+      </div>
+      <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden">
+        <button class="faq-q w-full flex items-center justify-between p-5 text-left font-bold text-[#051a30]">When do I get access? What format? <span class="w-8 h-8 rounded-full bg-slate-100 grid place-items-center text-slate-600"><i class="fa-solid fa-chevron-down text-xs transition"></i></span></button>
+        <div class="faq-a hidden px-5 pb-5 text-sm font-medium text-slate-600 leading-relaxed">Instant. PDF (248 pages) + searchable Notion vault + Google Sheet + EPUB. Download link via email in ~2 minutes. Lifetime updates to 2028.</div>
+      </div>
+    </div>
+    <div class="mt-8 bg-[#051a30] rounded-[20px] p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-white">
+      <div>
+        <div class="font-black text-lg">Still unsure? Try the free sample.</div>
+        <div class="text-white/70 text-sm font-medium">Get 18 prompts + Chapter 1 free. No email spam, unsubscribe anytime.</div>
+      </div>
+      <div class="flex gap-3 w-full sm:w-auto">
+        <input id="emailInput" placeholder="your@email.com" class="flex-1 sm:w-[240px] bg-white text-[#051a30] rounded-full px-5 py-3 text-sm font-semibold placeholder:text-slate-400 focus:outline-none">
+        <button onclick="handleSubscribe()" class="bg-[#00e5cc] text-[#051a30] font-black px-6 py-3 rounded-full text-sm whitespace-nowrap">Send Sample</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-[#041425] border-t border-white/10 py-10">
+  <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col lg:flex-row gap-8 justify-between">
+      <div>
+        <div class="flex items-center gap-2 font-black tracking-widest text-white text-sm"><i class="fa-solid fa-microchip text-[#00e5cc]"></i> BLUEPRINT 2027</div>
+        <p class="mt-2 text-white/60 text-sm font-medium max-w-[420px]">The AI Income Blueprint is an independent publication. Not affiliated with OpenAI. Prompts optimized for ChatGPT, Claude, and Gemini.</p>
+        <div class="mt-4 flex gap-3 text-white/50">
+          <a href="#" class="w-8 h-8 rounded-full bg-white/10 grid place-items-center hover:bg-white/15 transition"><i class="fa-brands fa-x-twitter text-xs"></i></a>
+          <a href="#" class="w-8 h-8 rounded-full bg-white/10 grid place-items-center hover:bg-white/15 transition"><i class="fa-brands fa-instagram text-xs"></i></a>
+          <a href="#" class="w-8 h-8 rounded-full bg-white/10 grid place-items-center hover:bg-white/15 transition"><i class="fa-brands fa-youtube text-xs"></i></a>
+        </div>
+      </div>
+      <div class="flex gap-10 sm:gap-16 text-sm">
+        <div><div class="font-black text-white mb-3">Product</div><div class="space-y-2 font-semibold text-white/60"><a href="#preview" class="block hover:text-white">Preview</a><a href="#pricing" class="block hover:text-white">Pricing</a><a href="#prompts" class="block hover:text-white">Prompt Library</a></div></div>
+        <div><div class="font-black text-white mb-3">Support</div><div class="space-y-2 font-semibold text-white/60"><a href="#" class="block hover:text-white">Contact</a><a href="#" class="block hover:text-white">Refund Policy</a><a href="#" class="block hover:text-white">License</a></div></div>
+        <div><div class="font-black text-white mb-3">Legal</div><div class="space-y-2 font-semibold text-white/60"><a href="#" class="block hover:text-white">Privacy</a><a href="#" class="block hover:text-white">Terms</a></div></div>
+      </div>
+    </div>
+    <div class="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row gap-3 justify-between items-center text-xs font-semibold text-white/40">
+      <span>© 2027 Blueprint Labs. All rights reserved. Made for creators 18–35 learning to earn with AI.</span>
+      <span class="flex items-center gap-2"><span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span> All systems operational • Instant delivery</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Cart Drawer -->
+<div id="cartDrawer" class="fixed inset-0 z-[200] hidden">
+  <div id="cartBackdrop" class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+  <div class="absolute right-0 top-0 h-full w-[92%] sm:w-[420px] bg-white shadow-2xl flex flex-col">
+    <div class="p-6 border-b flex items-center justify-between">
+      <div class="font-black text-[#051a30] text-lg">Your Cart</div>
+      <button id="closeCart" class="w-9 h-9 rounded-full bg-slate-100 grid place-items-center"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div id="cartItems" class="flex-1 overflow-auto p-6 space-y-4">
+      <div id="emptyCart" class="text-center py-16">
+        <div class="w-16 h-16 rounded-full bg-slate-100 grid place-items-center mx-auto text-slate-400"><i class="fa-solid fa-bag-shopping text-xl"></i></div>
+        <div class="mt-3 font-bold text-slate-700">Your cart is empty</div>
+        <p class="text-sm text-slate-500">Add Blueprint Pro to unlock 1,000 prompts.</p>
+        <a href="#pricing" onclick="closeCartDrawer()" class="mt-4 inline-flex bg-[#051a30] text-white px-5 py-2.5 rounded-full font-bold text-sm">See Pricing</a>
+      </div>
+    </div>
+    <div id="cartFooter" class="p-6 border-t bg-slate-50 hidden">
+      <div class="flex justify-between font-bold text-slate-700"><span>Subtotal</span><span id="cartTotal">$0</span></div>
+      <button onclick="checkout()" class="mt-4 w-full bg-[#00e5cc] text-[#051a30] font-black py-3.5 rounded-full">Checkout — Instant PDF</button>
+      <div class="mt-2 text-center text-xs font-semibold text-slate-500 flex items-center justify-center gap-2"><i class="fa-solid fa-lock"></i> Secure by Stripe • 30-day guarantee</div>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 sm:left-auto sm:right-6 sm:translate-x-0 z-[300] hidden">
+  <div class="bg-[#051a30] text-white px-5 py-3 rounded-full shadow-2xl flex items-center gap-3 border border-white/10">
+    <span class="w-7 h-7 rounded-full bg-[#00e5cc] text-[#051a30] grid place-items-center"><i class="fa-solid fa-check text-xs"></i></span>
+    <span id="toastMsg" class="font-semibold text-sm">Copied to clipboard</span>
+  </div>
+</div>
+
+<script>
+const prompts = [
+  {id:1, title:"Upwork Winning Proposal — No Portfolio Needed", cat:"Freelancing", tag:"Client Acq", uses:"4.2k", prompt:"Act as a top-rated Upwork freelancer (100% JSS) for 18-35 niches. Write a 120-word proposal for [JOB POST] that: hook in first line, 1 micro-case, 3 deliverables, clear timeline, and low-risk CTA. Avoid clichés."},
+  {id:2, title:"$1,500 Offer Builder for AI Services", cat:"Pricing", tag:"Pricing", uses:"3.8k", prompt:"Create a productized offer for [SKILL] targeting [NICHE]. Include: name, outcome, 3 packages ($299/$799/$1500), what’s included, what’s not, delivery in 3 days with AI tools."},
+  {id:3, title:"30-Day LinkedIn Inbound Engine", cat:"Outreach", tag:"Client Acq", uses:"3.5k", prompt:"You are a LinkedIn ghostwriter for Gen Z freelancers. Build a 30-day content calendar that attracts founders. Each post = hook + 3 insights + CTA for freelance service [SERVICE]."},
+  {id:4, title:"SEO Blog Factory — 1,500 Words in 25 Min", cat:"Content", tag:"Content", uses:"3.1k", prompt:"Write an SEO-optimized 1,500-word blog for [KEYWORD]. Structure: intro, H2s, stats, examples, FAQ schema. Tone: friendly expert for 25-year-old founder. Add internal link ideas."},
+  {id:5, title:"Instagram Carousel Designer Prompt", cat:"Design", tag:"Design", uses:"2.9k", prompt:"Act as a carousel designer. Turn [TOPIC] into 8 slides: cover hook, 6 value slides (7 words max each), CTA. Suggest visual style for 18-35 audience and Midjourney prompts for backgrounds."},
+  {id:6, title:"Discovery Call Script That Closes 60%", cat:"Outreach", tag:"Client Acq", uses:"2.7k", prompt:"Create a 15-min discovery call script for [SERVICE]. Include: rapport, 5 diagnostic questions, value pitch, objection handling for 'too expensive' and 'we’ll think', close for $800 starter."},
+  {id:7, title:"Zapier Client Onboarding Automator", cat:"Automation", tag:"Automation", uses:"2.6k", prompt:"Build a Zapier workflow: Typeform → Notion → Gmail → Calendar. When client buys [PACKAGE], auto-create Notion page, send onboarding email, and book kickoff. List steps + prompt for AI email."},
+  {id:8, title:"Fiverr Gig Rank Booster", cat:"Freelancing", tag:"Freelancing", uses:"2.4k", prompt:"Optimize my Fiverr gig for [KEYWORD]. Rewrite title, 5 tags, 3 packages, FAQ, and description that beats top 3 competitors. Add AI thumbnail text ideas."},
+  {id:9, title:"Cold DM That Gets Replies (No Cringe)", cat:"Outreach", tag:"Outreach", uses:"2.3k", prompt:"Write 3 DM variations for Instagram/LinkedIn to [TARGET] offering [SERVICE]. 40 words max, personalized line from their bio, soft CTA, no spam words."},
+  {id:10, title:"Notion Client Portal Builder", cat:"Automation", tag:"Automation", uses:"2.1k", prompt:"You are a Notion systems architect. Design a client portal for [SERVICE] with databases: tasks, assets, invoices, feedback. Provide page structure + AI prompt to auto-fill status updates."},
+  {id:11, title:"Ad Creative Angle Generator", cat:"Content", tag:"Content", uses:"2.0k", prompt:"Generate 10 ad angles for [PRODUCT] for TikTok/Meta targeting 18-35. For each: hook (5 words), pain, desire, CTA. Include UGC script outline 20 sec."},
+  {id:12, title:"Pricing Calculator — Never Undercharge", cat:"Pricing", tag:"Pricing", uses:"1.9k", prompt:"Calculate pricing for [SERVICE] given hours [H], AI speed multiplier [M], and desired $/hr [RATE]. Output 3 tiers with margin and upsell path to retainer."},
+  {id:13, title:"Testimonial → Case Study Transformer", cat:"Content", tag:"Content", uses:"1.8k", prompt:"Turn this client testimonial [TEXT] into a 300-word case study for my portfolio: challenge, AI process, result with numbers, quote, CTA for similar clients."},
+  {id:14, title:"AI Resume for Freelancers", cat:"Freelancing", tag:"Freelancing", uses:"1.7k", prompt:"Create a one-page freelance resume for [NICHE] that highlights AI skills. Include headline, 3 wins with metrics, tool stack, and ‘hire me’ CTA for 18-35 founders."},
+  {id:15, title:"YouTube Script: Hook → Retain → Convert", cat:"Content", tag:"Content", uses:"1.6k", prompt:"Write a 6-min YouTube script for [TOPIC] for 18-35 audience. Structure: 5-sec hook, 3 chapters, pattern interrupts, and CTA to book call for [SERVICE]."},
+];
+
+let visibleCount = 6;
+let activeFilter = 'all';
+let searchQuery = '';
+
+const grid = document.getElementById('promptGrid');
+const searchInput = document.getElementById('promptSearch');
+const chips = document.querySelectorAll('[data-filter]');
+
+function renderPrompts(){
+  const filtered = prompts.filter(p=>{
+    const matchCat = activeFilter==='all' || p.cat===activeFilter || p.tag===activeFilter;
+    const q = searchQuery.toLowerCase();
+    const matchSearch = !q || p.title.toLowerCase().includes(q) || p.prompt.toLowerCase().includes(q) || p.cat.toLowerCase().includes(q);
+    return matchCat && matchSearch;
+  });
+  const toShow = filtered.slice(0, visibleCount);
+  document.getElementById('promptCountLabel').textContent = filtered.length + ' prompts';
+  if(filtered.length===0){
+    grid.innerHTML = `<div class="col-span-full bg-[#0b2340] border border-white/10 rounded-2xl p-10 text-center text-white/70">No prompts found for “${searchQuery}”. Try “Upwork” or “Automation”.</div>`;
+    return;
+  }
+  grid.innerHTML = toShow.map(p=>`
+    <div class="prompt-card">
+      <div class="flex items-center gap-2 mb-3">
+        <span class="text-[11px] font-black tracking-widest px-2.5 py-1 rounded-full ${p.cat==='Automation'?'bg-[#00e5cc] text-[#051a30]':p.cat==='Content'?'bg-[#f2cc83] text-[#051a30]':'bg-white/10 text-white border border-white/15'}">${p.cat.toUpperCase()}</span>
+        <span class="text-[11px] font-bold text-white/50">${p.tag} • ${p.uses} uses</span>
+        <button onclick="toggleFav(${p.id}, this)" class="ml-auto w-7 h-7 rounded-full bg-white/5 border border-white/10 grid place-items-center text-white/60 hover:text-yellow-400"><i class="fa-regular fa-star text-xs"></i></button>
+      </div>
+      <div class="font-black text-white leading-tight text-[15px]">${p.title}</div>
+      <div class="mt-2 text-[13px] leading-relaxed text-white/65 font-mono bg-[#051a30] border border-white/10 rounded-xl p-3 line-clamp-3">${p.prompt}</div>
+      <div class="mt-3 flex items-center gap-2">
+        <button onclick="copyText(\`${p.prompt.replace(/`/g,'\\`')}\`)" class="flex-1 bg-white text-[#051a30] font-black text-xs px-4 py-2.5 rounded-full flex items-center justify-center gap-1.5 hover:bg-[#00e5cc] transition"><i class="fa-regular fa-copy"></i> Copy Prompt</button>
+        <button onclick="copyText(\`${p.prompt.replace(/`/g,'\\`')}\`); showToast('Prompt copied — paste in ChatGPT')" class="w-9 h-9 rounded-full bg-white/10 border border-white/15 grid place-items-center text-white hover:bg-white hover:text-[#051a30] transition"><i class="fa-solid fa-up-right-from-square text-xs"></i></button>
+      </div>
+    </div>
+  `).join('');
+  document.getElementById('loadMoreBtn').style.display = filtered.length > visibleCount ? 'inline-flex' : 'none';
+}
+renderPrompts();
+
+chips.forEach(c=>{
+  c.addEventListener('click', ()=>{
+    chips.forEach(x=>x.classList.remove('active'));
+    c.classList.add('active');
+    activeFilter = c.dataset.filter;
+    visibleCount=6;
+    renderPrompts();
+  });
+});
+searchInput.addEventListener('input', e=>{ searchQuery=e.target.value; visibleCount=9; renderPrompts(); if(e.target.value.length>0) document.getElementById('prompts').scrollIntoView({behavior:'smooth', block:'start'});});
+document.getElementById('clearFilters').addEventListener('click', ()=>{ searchQuery=''; searchInput.value=''; activeFilter='all'; chips.forEach(x=>x.classList.remove('active')); document.querySelector('[data-filter="all"]').classList.add('active'); visibleCount=6; renderPrompts();});
+document.getElementById('searchTopBtn').addEventListener('click', ()=>{ document.getElementById('prompts').scrollIntoView({behavior:'smooth'}); setTimeout(()=>searchInput.focus(),500);});
+document.getElementById('loadMoreBtn').addEventListener('click', ()=>{ visibleCount+=9; renderPrompts();});
+document.getElementById('sortSelect').addEventListener('change', ()=>{ prompts.sort(()=>Math.random()-0.5); renderPrompts(); showToast('Sorted • refreshed');});
+
+function copyText(txt){
+  navigator.clipboard.writeText(txt);
+  showToast('Copied to clipboard ✓');
+}
+function toggleFav(id, btn){
+  btn.classList.toggle('text-yellow-400');
+  btn.innerHTML = btn.classList.contains('text-yellow-400') ? '<i class="fa-solid fa-star text-xs"></i>' : '<i class="fa-regular fa-star text-xs"></i>';
+  showToast(btn.classList.contains('text-yellow-400') ? 'Saved to favorites ★' : 'Removed from favorites');
+}
+
+// Tabs
+document.querySelectorAll('.tab-btn').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('.tab-btn').forEach(b=>{
+      b.classList.remove('active','bg-[#051a30]','text-white');
+      b.classList.add('bg-white','border','border-slate-200');
+      b.querySelector('span.w-8').className='w-8 h-8 rounded-full bg-slate-100 grid place-items-center font-black text-sm text-slate-600';
+    });
+    btn.classList.add('active','bg-[#051a30]','text-white');
+    btn.classList.remove('bg-white','border','border-slate-200');
+    btn.querySelector('span.w-8').className='w-8 h-8 rounded-full bg-[#00e5cc] text-[#051a30] grid place-items-center font-black text-sm';
+    document.querySelectorAll('.tab-panel').forEach(p=>p.classList.add('hidden'));
+    document.querySelector(`[data-panel="${btn.dataset.tab}"]`).classList.remove('hidden');
+  });
+});
+
+// Reader
+const pages = [
+  `<div class="text-center">
+    <div class="inline-flex bg-[#051a30] text-[#00e5cc] text-[11px] font-black tracking-widest px-3 py-1 rounded-full">2027 EDITION • PAGE 01</div>
+    <h3 class="mt-4 text-[26px] font-black leading-none text-[#051a30]">THE AI INCOME BLUEPRINT</h3>
+    <p class="text-[#f2a900] font-bold text-xs tracking-[0.2em] mt-1">HOW TO MASTER CHATGPT PROMPTS</p>
+    <div class="mt-6 mx-auto w-[140px]"><img src="https://www.designarena.ai/u/dda7db16-c077-4755-bafb-92e7db83e7e9" class="w-full rounded-xl border"></div>
+    <p class="mt-4 text-slate-600 text-sm">Your roadmap to <b>$1k–$5k/mo</b> freelancing with AI — even if you start at zero. No audience. No fancy degree. Just prompts that sell.</p>
+    <div class="mt-4 bg-[#fef3c7] border border-amber-200 rounded-xl p-3 text-xs font-bold text-amber-900">This preview contains 6 pages of 248. Full vault = 1,024 prompts</div>
+  </div>`,
+  `<div>
+    <div class="text-[11px] font-black tracking-widest text-slate-400">CHAPTER 01 • FIND YOUR $2K SKILL</div>
+    <h3 class="mt-1 text-xl font-black text-[#051a30]">The 3-Question Niche Filter</h3>
+    <p class="mt-2 text-slate-600 text-sm leading-relaxed">Most beginners pick a “passion.” Pros pick a <b>pain</b>. Run this prompt to find a service founders already pay for.</p>
+    <div class="mt-4 bg-[#0b2340] text-white rounded-xl p-4 font-mono text-xs leading-relaxed">Act as a freelance analyst for Gen Z. Analyze these 3 skills [list] against demand, AI leverage, and time to $1000. Score 1-10 and recommend the top 1 with first 5 prospects on Upwork/X.</div>
+    <div class="mt-3 flex gap-2 text-xs font-bold"><span class="bg-emerald-50 text-emerald-700 px-2 py-1 rounded-full">⏱ 12 min</span><span class="bg-slate-100 px-2 py-1 rounded-full">184 related prompts → p.42</span></div>
+  </div>`,
+  `<div>
+    <div class="text-[11px] font-black tracking-widest text-slate-400">CHAPTER 02 • PROMPT ENGINEERING</div>
+    <h3 class="mt-1 text-xl font-black text-[#051a30]">The RCTC Formula</h3>
+    <div class="mt-2 grid grid-cols-4 gap-2 text-center text-xs font-black">
+      <div class="bg-[#ccfbf1] rounded-xl p-2"><div class="text-teal-700">R</div><div class="text-[10px]">Role</div></div>
+      <div class="bg-[#fef3c7] rounded-xl p-2"><div class="text-amber-700">C</div><div class="text-[10px]">Context</div></div>
+      <div class="bg-[#dbeafe] rounded-xl p-2"><div class="text-blue-700">T</div><div class="text-[10px]">Task</div></div>
+      <div class="bg-[#fce7f3] rounded-xl p-2"><div class="text-pink-700">C</div><div class="text-[10px]">Constraints</div></div>
+    </div>
+    <p class="mt-3 text-slate-600 text-sm">Example: “You are a Shopify email expert for 18-35 fashion brands. Context: abandoned cart. Task: write 3-email sequence. Constraints: 80 words max, Gen Z tone, 1 CTA.”</p>
+    <div class="mt-3 bg-amber-50 border border-amber-200 rounded-xl p-3 text-xs font-semibold">Try it: Copy the prompt below and replace the bracket fields.</div>
+  </div>`,
+  `<div>
+    <div class="text-[11px] font-black tracking-widest text-slate-400">TEMPLATE VAULT • PAGE 04</div>
+    <h3 class="mt-1 text-xl font-black text-[#051a30]">Client-Ready Deliverable Kit</h3>
+    <ul class="mt-3 space-y-2 text-sm">
+      <li class="flex gap-2"><span class="w-6 h-6 rounded-full bg-[#051a30] text-white grid place-items-center text-[10px]">1</span><span class="font-semibold">Proposal template (beats 38% win rate)</span></li>
+      <li class="flex gap-2"><span class="w-6 h-6 rounded-full bg-[#051a30] text-white grid place-items-center text-[10px]">2</span><span class="font-semibold">Invoice + scope of work (Notion)</span></li>
+      <li class="flex gap-2"><span class="w-6 h-6 rounded-full bg-[#051a30] text-white grid place-items-center text-[10px]">3</span><span class="font-semibold">Revision request handler prompt</span></li>
+    </ul>
+    <div class="mt-4 border-2 border-dashed border-slate-300 rounded-xl p-4 text-center text-slate-500 text-xs font-bold">Preview of Notion vault — full access with Pro</div>
+  </div>`,
+  `<div>
+    <div class="text-[11px] font-black tracking-widest text-slate-400">CASE STUDY • MIA, 22</div>
+    <h3 class="mt-1 text-xl font-black text-[#051a30]">€0 → €1,840 in 18 Days</h3>
+    <div class="mt-2 bg-slate-50 border rounded-xl p-3 flex gap-3">
+      <img src="https://i.pravatar.cc/100?img=33" class="w-10 h-10 rounded-full">
+      <div class="text-xs leading-relaxed"><b>Mia, Berlin — barista, no portfolio.</b><br>Used Module 1 + 3 prompts. Landed 2 Shopify stores for product descriptions + emails. Now retainer €900/mo.</div>
+    </div>
+    <div class="mt-3 text-xs font-mono bg-white border rounded-xl p-3">Her first prompt: “Act as Etsy SEO expert. Audit this store [URL] and list 5 AI-improved listings I can deliver in 48h for €150.”</div>
+  </div>`,
+  `<div class="text-center">
+    <div class="w-12 h-12 rounded-full bg-[#00e5cc] grid place-items-center mx-auto text-[#051a30]"><i class="fa-solid fa-unlock"></i></div>
+    <h3 class="mt-3 text-xl font-black text-[#051a30]">Unlock the Full Blueprint</h3>
+    <p class="mt-2 text-slate-600 text-sm">Get the complete 248 pages, 1,024 prompts, and 50 templates. Instant download + future updates.</p>
+    <button onclick="generatePDF('full')" class="mt-4 bg-[#051a30] text-white font-black px-6 py-3 rounded-full text-sm w-full">Get Full PDF — $29</button>
+    <div class="mt-2 text-xs font-semibold text-slate-500">30-day guarantee • Pay once, keep forever</div>
+  </div>`
+];
+let curPage=0;
+const readerContent=document.getElementById('readerContent');
+const readerPageNum=document.getElementById('readerPageNum');
+const dots=document.getElementById('readerDots');
+function renderReader(){
+  readerContent.innerHTML = pages[curPage];
+  readerPageNum.textContent = curPage+1;
+  dots.innerHTML = pages.map((_,i)=>`<button onclick="goPage(${i})" class="w-2.5 h-2.5 rounded-full ${i===curPage?'bg-[#051a30] w-6':'bg-slate-300'} transition"></button>`).join('');
+  document.getElementById('prevPage').disabled = curPage===0;
+  document.getElementById('nextPage').disabled = curPage===pages.length-1;
+  document.getElementById('prevPage').style.opacity = curPage===0?'0.4':'1';
+  document.getElementById('nextPage').style.opacity = curPage===pages.length-1?'0.4':'1';
+}
+function goPage(i){ curPage=i; renderReader(); }
+document.getElementById('prevPage').addEventListener('click', ()=>{ if(curPage>0){curPage--; renderReader();}});
+document.getElementById('nextPage').addEventListener('click', ()=>{ if(curPage<pages.length-1){curPage++; renderReader();}});
+document.getElementById('zoomIn').addEventListener('click', ()=>{ let s=parseFloat(readerContent.style.fontSize)||15; readerContent.style.fontSize=(Math.min(19,s+1))+'px';});
+document.getElementById('zoomOut').addEventListener('click', ()=>{ let s=parseFloat(readerContent.style.fontSize)||15; readerContent.style.fontSize=(Math.max(12,s-1))+'px';});
+readerContent.addEventListener('click', ()=>{ if(curPage<pages.length-1){curPage++; renderReader();}});
+renderReader();
+
+// FAQ
+document.querySelectorAll('.faq-q').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    const item=btn.parentElement;
+    const ans=item.querySelector('.faq-a');
+    const icon=btn.querySelector('i');
+    const isHidden=ans.classList.contains('hidden');
+    document.querySelectorAll('.faq-a').forEach(a=>a.classList.add('hidden'));
+    document.querySelectorAll('.faq-q i').forEach(i=>i.style.transform='');
+    if(isHidden){ ans.classList.remove('hidden'); icon.style.transform='rotate(180deg)'; }
+  });
+});
+
+// Mobile menu
+document.getElementById('mobileToggle').addEventListener('click', ()=>{
+  document.getElementById('mobileMenu').classList.toggle('hidden');
+});
+
+// Cart
+let cart=[];
+function addToCart(name, price){
+  const existing=cart.find(c=>c.name===name);
+  if(existing) existing.qty++;
+  else cart.push({name, price, qty:1});
+  updateCart();
+  openCartDrawer();
+  showToast(name+' added to cart ✓');
+}
+function updateCart(){
+  document.getElementById('cartCount').textContent = cart.reduce((a,c)=>a+c.qty,0);
+  const itemsEl=document.getElementById('cartItems');
+  const footer=document.getElementById('cartFooter');
+  const empty=document.getElementById('emptyCart');
+  if(cart.length===0){
+    empty.style.display='block';
+    footer.classList.add('hidden');
+    itemsEl.innerHTML = empty.outerHTML;
+    // reattach empty reference
+    return;
+  }
+  empty.style.display='none';
+  footer.classList.remove('hidden');
+  itemsEl.innerHTML = cart.map((c,i)=>`
+    <div class="flex gap-4 items-center bg-slate-50 border rounded-2xl p-4">
+      <div class="w-12 h-12 rounded-xl bg-[#051a30] grid place-items-center text-white"><i class="fa-solid fa-book"></i></div>
+      <div class="flex-1">
+        <div class="font-black text-sm text-[#051a30]">${c.name}</div>
+        <div class="text-xs font-semibold text-slate-500">PDF + Notion • Instant</div>
+      </div>
+      <div class="text-right">
+        <div class="font-black text-[#051a30]">$${c.price}</div>
+        <button onclick="removeFromCart(${i})" class="text-xs font-bold text-red-500">Remove</button>
+      </div>
+    </div>
+  `).join('');
+  document.getElementById('cartTotal').textContent = '$' + cart.reduce((a,c)=>a+c.price*c.qty,0);
+}
+function removeFromCart(i){ cart.splice(i,1); updateCart(); }
+function openCartDrawer(){ document.getElementById('cartDrawer').classList.remove('hidden'); }
+function closeCartDrawer(){ document.getElementById('cartDrawer').classList.add('hidden'); }
+document.getElementById('cartBtn').addEventListener('click', openCartDrawer);
+document.getElementById('closeCart').addEventListener('click', closeCartDrawer);
+document.getElementById('cartBackdrop').addEventListener('click', closeCartDrawer);
+function checkout(){
+  showToast('Redirecting to secure checkout…');
+  setTimeout(()=>{ generatePDF('full'); cart=[]; updateCart(); closeCartDrawer(); }, 900);
+}
+
+// Toast
+function showToast(msg){
+  const t=document.getElementById('toast');
+  document.getElementById('toastMsg').textContent=msg;
+  t.classList.remove('hidden');
+  setTimeout(()=>t.classList.add('hidden'), 2600);
+}
+
+// PDF generation
+function generatePDF(type){
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF({unit:'pt', format:'a4'});
+  const W = doc.internal.pageSize.getWidth();
+  const H = doc.internal.pageSize.getHeight();
+  // cover
+  doc.setFillColor(5,26,48);
+  doc.rect(0,0,W,H,'F');
+  // subtle grid
+  doc.setDrawColor(0,229,204);
+  doc.setLineWidth(0.2);
+  for(let x=30;x<W;x+=40){ doc.setDrawColor(0,229,204); doc.setLineWidth(0.15); doc.line(x,0,x,H); }
+  // chip icon
+  doc.setDrawColor(0,229,204); doc.setLineWidth(1.2);
+  doc.roundedRect(W/2-36, 70, 72, 72, 10,10,'S');
+  doc.setFontSize(9); doc.setTextColor(94,225,216); doc.setFont('helvetica','bold'); doc.text('2027  •  EDITION', W/2, 56, {align:'center'});
+  doc.setTextColor(255,255,255); doc.setFontSize(42); doc.setFont('helvetica','bold'); doc.text('THE  AI  INCOME', W/2, 210, {align:'center'});
+  doc.setFontSize(48); doc.text('BLUEPRINT', W/2, 258, {align:'center'});
+  doc.setTextColor(0,229,204); doc.text('AI', W/2-28, 210, {align:'center'}); // overpaint AI cyan
+  doc.setTextColor(242,204,131); doc.setFontSize(11); doc.text('How to Master ChatGPT Prompts to Start a Freelancing', W/2, 285, {align:'center'});
+  doc.text('Side Hustle in 2027', W/2, 300, {align:'center'});
+  // teal box
+  doc.setFillColor(10,122,130); doc.roundedRect(60, 340, W-120, 92, 14,14,'F');
+  doc.setDrawColor(0,229,204); doc.roundedRect(60, 340, W-120, 92, 14,14,'S');
+  doc.setTextColor(255,255,255); doc.setFontSize(16); doc.text('1,000+ Ready-to-Use Secret Prompts Included', W/2, 378, {align:'center'});
+  doc.setTextColor(125,231,224); doc.setFontSize(12); doc.text('for Automated Growth', W/2, 398, {align:'center'});
+  doc.setFontSize(7); doc.setTextColor(255,255,255); doc.text('YOUR ROADMAP TO AI-POWERED FREELANCE INCOME  •  2027', W/2, H-30, {align:'center'});
+  if(type==='sample'){
+    doc.addPage();
+    doc.setFillColor(248,250,252); doc.rect(0,0,W,H,'F');
+    doc.setTextColor(5,26,48); doc.setFontSize(20); doc.text('Sample — Chapter 01: Find Your $2K Skill', 40, 60);
+    doc.setFontSize(10); doc.setTextColor(71,85,105);
+    const sampleText = doc.splitTextToSize("This sample includes the first 12 pages of The AI Income Blueprint (2027 Edition). Inside the full 248-page PDF you get 1,024 copy-paste prompts, 50 templates, and the automation stack for freelancers aged 18–35. Use the Skill-Matrix prompt on page 3 to find a service you can sell in 48 hours. The preview reader on the site shows live, searchable prompts — every prompt is tested for Upwork, Fiverr, LinkedIn, and cold outreach.", 520);
+    doc.text(sampleText, 40, 90);
+    doc.setFontSize(11); doc.setTextColor(5,26,48); doc.text('Try this prompt now:', 40, 190);
+    doc.setFillColor(11,35,64); doc.roundedRect(40, 205, 515, 110, 8,8,'F');
+    doc.setTextColor(255,255,255); doc.setFontSize(9); doc.setFont('courier','normal');
+    const p = doc.splitTextToSize("Act as a 2027 freelance strategist for Gen Z. Given my skills [X], time [Y hrs/week], and goal [$2000/mo], rank the top 5 AI services I can sell with price, delivery time, and first 3 clients to target. Be specific.", 485);
+    doc.text(p, 55, 230);
+    doc.setFont('helvetica','bold'); doc.setTextColor(5,26,48); doc.setFontSize(9); doc.text('Get the full vault at blueprint.ai — 30-day guarantee.', 40, 360);
+  } else {
+    // full - TOC + prompts
+    doc.addPage();
+    doc.setFillColor(255,255,255); doc.rect(0,0,W,H,'F');
+    doc.setTextColor(5,26,48); doc.setFontSize(22); doc.setFont('helvetica','bold'); doc.text('Table of Contents — 2027 Edition', 40, 60);
+    doc.setFontSize(10); doc.setFont('helvetica','normal'); doc.setTextColor(71,85,105);
+    const toc = ["01  Find Your $2K Skill — p.7 (184 prompts)", "02  Prompt Engineering: The RCTC Formula — p.49 (310 prompts)", "03  Client Acquisition Without Cold DMs — p.107 (220 prompts)", "04  Automation Stack (Zapier/Make) — p.155 (180 prompts)", "05  Scale to $5K Retainers — p.195 (130 prompts)", "Appendix — 50 Templates, Contracts, Scripts — p.235"];
+    toc.forEach((t,i)=> doc.text(t, 40, 95+i*22));
+    doc.addPage();
+    doc.setTextColor(5,26,48); doc.setFontSize(16); doc.text('Prompt Vault — Top 20 (of 1,024)', 40, 50);
+    doc.setFontSize(8); doc.setTextColor(71,85,105);
+    let y=75;
+    prompts.slice(0,20).forEach((pr,idx)=>{
+      if(y>760){ doc.addPage(); y=50; }
+      doc.setFillColor(241,245,249); doc.roundedRect(40, y-12, 515, 34, 6,6,'F');
+      doc.setTextColor(5,26,48); doc.setFont('helvetica','bold'); doc.setFontSize(8); doc.text((idx+1)+". "+pr.title+"  ["+pr.cat+"]", 50, y);
+      doc.setFont('helvetica','normal'); doc.setFontSize(6.5); doc.setTextColor(71,85,105);
+      const lines = doc.splitTextToSize(pr.prompt, 495);
+      doc.text(lines.slice(0,2), 50, y+10);
+      y+=42;
+    });
+    doc.setFontSize(8); doc.setTextColor(0,122,130); doc.text('All 1,024 prompts are also delivered as Notion database + Google Sheet with filters.', 40, y+10);
+  }
+  const fileName = type==='sample' ? 'AI-Income-Blueprint-2027-SAMPLE.pdf' : 'AI-Income-Blueprint-2027-Full.pdf';
+  doc.save(fileName);
+  showToast((type==='sample'?'Sample':'Full')+' PDF downloaded ✓');
+}
+
+// Newsletter
+function handleSubscribe(){
+  const email=document.getElementById('emailInput').value.trim();
+  if(!email || !email.includes('@')){ showToast('Enter a valid email'); return; }
+  showToast('Sample sent to '+email+' ✓');
+  generatePDF('sample');
+  document.getElementById('emailInput').value='';
+}
+
+// Pricing toggle
+document.getElementById('billingOnce').addEventListener('click', function(){
+  this.classList.add('bg-white','text-[#051a30]'); this.classList.remove('text-white/70');
+  document.getElementById('billingBundle').classList.remove('bg-white','text-[#051a30]'); document.getElementById('billingBundle').classList.add('text-white/70');
+});
+document.getElementById('billingBundle').addEventListener('click', function(){
+  this.classList.add('bg-white','text-[#051a30]'); this.classList.remove('text-white/70');
+  document.getElementById('billingOnce').classList.remove('bg-white','text-[#051a30]'); document.getElementById('billingOnce').classList.add('text-white/70');
+  showToast('Bundle: Pro + 1h Workshop for $49 (save 37%)');
+});
+
+// Year update to 2027
+document.getElementById('heroYear').textContent='2027';
+document.getElementById('heroEditionBadge').textContent='2027 • EDITION';
+
+// Hide circuit flash on load
+window.addEventListener('load', ()=> showToast('Welcome • 2027 Edition ready — preview free sample'));
+</script>
+</body>
+</html>
